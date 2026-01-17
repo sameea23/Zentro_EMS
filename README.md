@@ -1,15 +1,15 @@
 # Zentro_EMS
 Zentro is a web-based Event Management System designed to help organizers create and manage events, while enabling attendees to browse events, register, and purchase tickets. This system provides a smooth workflow for event creation, ticketing, and user management.
-**Table of Contents**
 
+## Table of Contents
 Features
 Technologies Used
 Installation & Setup
 Usage
 Database Structure
 
-****Features****
-**Organizer**
+## Features
+### Organizer
 Create, edit, cancel, or delete events.
 
 View registrations for their events.
@@ -18,7 +18,7 @@ Set event capacity and ensure no time conflicts at the venue.
 
 Monitor ticket sales and payments.
 
-Attendee
+### Attendee
 
 Browse upcoming events.
 
@@ -28,11 +28,11 @@ View registration and payment status.
 
 Cancel registration if needed.
 
-Admin
+### Admin
 
 Manage all users, events, venues, tickets, and payments via Django admin.
 
-General Features
+### General Features
 
 User authentication with roles (Admin, Organizer, Attendee).
 
@@ -46,7 +46,7 @@ Payment tracking and status messages.
 
 Flash messages for user feedback.
 
-Technologies Used
+### Technologies Used
 
 Backend: Django (Python)
 
@@ -58,50 +58,37 @@ Authentication: Django built-in user model (customized)
 
 Other: Django Messages Framework for flash messages
 
-Installation & Setup
+### Installation & Setup
 
-Clone the repository:
-
-git clone https://github.com/<your-username>/zentro.git
-cd zentro
-
-
-Create a virtual environment:
+#### Create a virtual environment:
 
 python -m venv venv
 source venv/bin/activate      # Linux / macOS
 venv\Scripts\activate         # Windows
 
 
-Install dependencies:
+##### Install dependencies:
 
 pip install -r requirements.txt
 
 
-Configure database:
+#### Configure database:
 
 Update settings.py with your SQL Server credentials.
 
-Run migrations:
+#### Run migrations:
 
 python manage.py makemigrations
 python manage.py migrate
 
-
-Create a superuser (admin):
-
-python manage.py createsuperuser
-
-
-Run the development server:
+#### Run the development server:
 
 python manage.py runserver
 
-
 Open your browser and navigate to http://127.0.0.1:8000/.
 
-Usage
-For Organizers
+## Usage
+### For Organizers
 
 Sign up as an Organizer.
 
@@ -111,7 +98,7 @@ View event registrations and ticket status.
 
 Cancel or delete events if necessary.
 
-For Attendees
+### For Attendees
 
 Sign up as an Attendee.
 
@@ -123,11 +110,11 @@ Make payments for tickets and view payment status.
 
 Cancel registrations if needed.
 
-Admin
+### Admin
 
 Access the Django admin panel at /admin to manage all data.
 
-Database Structure
+## Database Structure
 
 Users (events_users) – stores all users with roles (admin, organizer, attendee)
 
