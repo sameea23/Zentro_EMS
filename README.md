@@ -3,14 +3,20 @@ Zentro is a web-based Event Management System designed to help organizers create
 
 # Group Members
 Sameea Amjad
+
 Ambreen Naeem
+
 Sadaf Fatima
 
 ## Table of Contents
 Features
+
 Technologies Used
+
 Installation & Setup
+
 Usage
+
 Database Structure
 
 ## Features
